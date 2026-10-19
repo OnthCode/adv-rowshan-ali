@@ -2,14 +2,8 @@
    Legal summaries are general information, reviewed Oct 2026; confirm current law before relying on them. */
 
 const SITE = {
-  phone: "+8801717023985",
-  phoneDisplay: "01717-023985",
-  phone2Display: "01739-526131",
   whatsapp: "8801717023985",
   email: "lawyerschamber2016@gmail.com",
-  facebook: "https://www.facebook.com/rowshan.ali.5",
-  youtube: "https://www.youtube.com/@TheLawyersChamber/videos",
-  website: "https://lawyerschamber.info/",
 };
 
 const QUOTES = [
@@ -24,7 +18,7 @@ const QUOTES = [
 
 const SOLUTIONS = [
   {
-    id: "land", icon: "⌂", title: "Land or property dispute", bn: "জমি-জমা",
+    id: "land", icon: "home", title: "Land or property dispute", bn: "জমি-জমা",
     law: "Transfer of Property Act 1882 · Registration Act 1908 · State Acquisition & Tenancy Act 1950 · Specific Relief Act 1877 · Land Crimes Prevention and Remedy Act 2023",
     steps: [
       "Collect every document: deeds (dolil), khatian / record-of-rights (CS, SA, RS, BS), mutation (namjari) papers and land-tax receipts.",
@@ -36,7 +30,7 @@ const SOLUTIONS = [
     docs: ["Title deeds & via-deeds", "Khatian (all surveys)", "Namjari / DCR", "Land-tax (khajna) receipts", "Mouza map"],
   },
   {
-    id: "family", icon: "♡", title: "Marriage, divorce or custody", bn: "পারিবারিক",
+    id: "family", icon: "users", title: "Marriage, divorce or custody", bn: "পারিবারিক",
     law: "Muslim Family Laws Ordinance 1961 · Dissolution of Muslim Marriages Act 1939 · Family Courts Act 2023 · Guardians and Wards Act 1890",
     steps: [
       "Keep your nikahnama (marriage registration) — it records denmohor (dower) and any delegated right of divorce.",
@@ -48,7 +42,7 @@ const SOLUTIONS = [
     docs: ["Nikahnama / Kabinnama", "NID of both parties", "Children's birth certificates", "Proof of income / expenses", "Any messages or evidence of abuse"],
   },
   {
-    id: "cheque", icon: "✎", title: "Cheque bounced / money unpaid", bn: "চেক ডিজঅনার",
+    id: "cheque", icon: "banknote", title: "Cheque bounced / money unpaid", bn: "চেক ডিজঅনার",
     law: "Negotiable Instruments Act 1881, s.138 · Artha Rin Adalat Ain 2003 (bank loans)",
     steps: [
       "Present the cheque within 6 months of its date (or within its validity).",
@@ -60,7 +54,7 @@ const SOLUTIONS = [
     docs: ["Original cheque", "Bank dishonour slip", "Copy of legal notice & postal receipt", "Agreement / proof of debt"],
   },
   {
-    id: "criminal", icon: "⚖", title: "Arrest, FIR or criminal case", bn: "ফৌজদারি",
+    id: "criminal", icon: "shield", title: "Arrest, FIR or criminal case", bn: "ফৌজদারি",
     law: "Constitution Art. 33 & 35 · Code of Criminal Procedure 1898 · Penal Code 1860",
     steps: [
       "An arrested person must be told the grounds of arrest and may consult a lawyer of their choice (Art. 33).",
@@ -72,7 +66,7 @@ const SOLUTIONS = [
     docs: ["FIR / GD copy or case number", "Charge-sheet (if any)", "NID", "Any evidence: photos, messages, witnesses"],
   },
   {
-    id: "cyber", icon: "⌘", title: "Online harassment or fraud", bn: "সাইবার অপরাধ",
+    id: "cyber", icon: "lock", title: "Online harassment or fraud", bn: "সাইবার অপরাধ",
     law: "Cyber-security law in force (Cyber Security Act 2023 was replaced by an Ordinance in 2025) · Pornography Control Act 2012 · Penal Code 1860",
     steps: [
       "Do not delete anything. Take screenshots showing the profile link, date and time.",
@@ -84,7 +78,7 @@ const SOLUTIONS = [
     docs: ["Screenshots with URLs", "Transaction IDs", "GD copy", "Phone numbers / profile links involved"],
   },
   {
-    id: "job", icon: "◎", title: "Job, salary or dismissal", bn: "শ্রম ও চাকরি",
+    id: "job", icon: "briefcase", title: "Job, salary or dismissal", bn: "শ্রম ও চাকরি",
     law: "Bangladesh Labour Act 2006 · Labour Rules 2015",
     steps: [
       "Every worker is entitled to a written appointment letter and an ID card.",
@@ -96,7 +90,7 @@ const SOLUTIONS = [
     docs: ["Appointment letter", "ID card", "Pay slips / bank statements", "Termination letter", "Copy of grievance letter"],
   },
   {
-    id: "business", icon: "▣", title: "Business, company or contract", bn: "ব্যবসা ও কোম্পানি",
+    id: "business", icon: "building", title: "Business, company or contract", bn: "ব্যবসা ও কোম্পানি",
     law: "Companies Act 1994 · Contract Act 1872 · Arbitration Act 2001 · Trade Marks Act 2009",
     steps: [
       "Put every deal in a written, signed agreement with clear payment and dispute terms.",
@@ -108,7 +102,7 @@ const SOLUTIONS = [
     docs: ["Contracts / MoUs", "Trade licence", "Incorporation documents", "Invoices & correspondence"],
   },
   {
-    id: "rights", icon: "✦", title: "Government action or fundamental rights", bn: "রিট ও মৌলিক অধিকার",
+    id: "rights", icon: "landmark", title: "Government action or fundamental rights", bn: "রিট ও মৌলিক অধিকার",
     law: "Constitution Part III (Art. 26–47A) · Article 102 (writ jurisdiction) · Right to Information Act 2009",
     steps: [
       "If a public authority acts unlawfully or violates a fundamental right, a writ petition can be filed in the High Court Division under Article 102.",
@@ -231,9 +225,12 @@ const QUIZ = [
 ];
 
 const PRACTICE = [
-  "Criminal Law", "Civil Litigation", "Constitutional & Writ", "Family & Personal Law", "Land & Conveyancing", "Banking & Money Loan",
-  "Corporate & Company", "Labour & Industrial", "Revenue, VAT & Tax", "Intellectual Property", "Admiralty & Maritime", "Arbitration & ADR",
-  "Environmental Law", "Insurance", "Foreign Investment", "Notary Public", "Public Interest Litigation", "International Trade",
+  { name: "Criminal Law", icon: "shield" }, { name: "Civil Litigation", icon: "scale" }, { name: "Constitutional & Writ", icon: "landmark" },
+  { name: "Family & Personal Law", icon: "users" }, { name: "Land & Conveyancing", icon: "home" }, { name: "Banking & Money Loan", icon: "banknote" },
+  { name: "Corporate & Company", icon: "building" }, { name: "Labour & Industrial", icon: "briefcase" }, { name: "Revenue, VAT & Tax", icon: "percent" },
+  { name: "Intellectual Property", icon: "bulb" }, { name: "Admiralty & Maritime", icon: "anchor" }, { name: "Arbitration & ADR", icon: "handshake" },
+  { name: "Environmental Law", icon: "leaf" }, { name: "Insurance", icon: "umbrella" }, { name: "Foreign Investment", icon: "trending" },
+  { name: "Notary Public", icon: "stamp" }, { name: "Public Interest Litigation", icon: "megaphone" }, { name: "International Trade", icon: "globe" },
 ];
 
 const CLIENTS = [
@@ -242,15 +239,21 @@ const CLIENTS = [
 ];
 
 /* Official government / Bar Council sources (linked from the "Official sources" section and law details). */
-const OFFICIAL_LAWS_INDEX = "http://bdlaws.minlaw.gov.bd/laws-of-bangladesh-alphabetical-index.html";
+const OFFICIAL_LAWS_INDEX = "https://lawjusticediv.gov.bd/pages/static-pages/6941401fc4774958d7b54ab2";
 
 const OFFICIAL = [
-  { name: "Law and Justice Division", bn: "আইন ও বিচার বিভাগ", desc: "Ministry of Law — notices, circulars, laws & rules, judicial reform.", url: "https://lawjusticediv.gov.bd/", tag: "Ministry" },
-  { name: "Bangladesh Bar Council", bn: "বাংলাদেশ বার কাউন্সিল", desc: "Advocate enrolment exams, notices and the regulator of advocates.", url: "https://www.barcouncil.gov.bd/", tag: "Regulator" },
-  { name: "Laws of Bangladesh", bn: "বাংলাদেশের আইন", desc: "Official full text of every Act and Ordinance, in English and Bangla.", url: OFFICIAL_LAWS_INDEX, tag: "Law texts" },
-  { name: "Supreme Court of Bangladesh", bn: "বাংলাদেশ সুপ্রীম কোর্ট", desc: "Cause lists, judgments and notices of both Divisions.", url: "https://www.supremecourt.gov.bd/", tag: "Court" },
-  { name: "National Legal Aid (NLASO)", bn: "আইনগত সহায়তা অধিদপ্তর", desc: "Free legal aid for those who cannot afford a lawyer. Hotline 16430.", url: "http://nlaso.gov.bd/", tag: "Free help" },
-  { name: "Department of Registration", bn: "নিবন্ধন অধিদপ্তর", desc: "Deed registration, fees and sub-registry offices.", url: "https://rd.gov.bd/", tag: "Land" },
-  { name: "Court & legal forms", bn: "আইন-শৃঙ্খলা ও আদালত ফরম", desc: "Government forms for courts, legal aid and related services.", url: "https://forms.portal.gov.bd/", tag: "Forms" },
-  { name: "Grievance Redress System", bn: "অভিযোগ প্রতিকার ব্যবস্থা", desc: "File an online complaint against any government office.", url: "http://www.grs.gov.bd/", tag: "Complaints" },
+  { name: "Law and Justice Division", bn: "আইন ও বিচার বিভাগ", desc: "Ministry of Law — notices, circulars, laws & rules, judicial reform.", url: "https://lawjusticediv.gov.bd/", tag: "Ministry", icon: "landmark" },
+  { name: "Bangladesh Bar Council", bn: "বাংলাদেশ বার কাউন্সিল", desc: "Advocate enrolment exams, notices and the regulator of advocates.", url: "https://www.barcouncil.gov.bd/", tag: "Regulator", icon: "award" },
+  { name: "Legislative & Parliamentary Affairs Division", bn: "লেজিসলেটিভ ও সংসদ বিষয়ক বিভাগ", desc: "Drafts and publishes every Act and Ordinance of Bangladesh.", url: "https://legislativediv.gov.bd/", tag: "Law texts", icon: "book" },
+  { name: "Supreme Court of Bangladesh", bn: "বাংলাদেশ সুপ্রীম কোর্ট", desc: "Cause lists, judgments and notices of both Divisions.", url: "https://www.supremecourt.gov.bd/", tag: "Court", icon: "scale" },
+  { name: "National Legal Aid (NLASO)", bn: "আইনগত সহায়তা অধিদপ্তর", desc: "Free legal aid for those who cannot afford a lawyer. Hotline 16430.", url: "http://nlaso.gov.bd/", tag: "Free help", icon: "heart" },
+  { name: "Department of Registration", bn: "নিবন্ধন অধিদপ্তর", desc: "Deed registration, fees and sub-registry offices.", url: "https://rd.gov.bd/", tag: "Land", icon: "file" },
+  { name: "Government e-services", bn: "সরকারি ই-সেবা", desc: "Every government e-service in one place, including court and legal services.", url: "https://bangladesh.gov.bd/site/view/all_eservices_in_bangladesh/", tag: "e-Services", icon: "globe" },
+  { name: "Grievance Redress System", bn: "অভিযোগ প্রতিকার ব্যবস্থা", desc: "File an online complaint against any government office.", url: "http://www.grs.gov.bd/", tag: "Complaints", icon: "megaphone" },
 ];
+
+/* Icon for each law / question category (names defined in icons.css). */
+const CAT_ICON = {
+  Constitution: "landmark", Criminal: "shield", Civil: "scale", Land: "home", Family: "users",
+  Business: "briefcase", Citizen: "user", Money: "banknote", Cyber: "lock", General: "help",
+};

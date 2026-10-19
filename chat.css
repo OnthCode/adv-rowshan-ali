@@ -79,3 +79,15 @@
   .wa-msg { max-width: 88%; font-size: .93rem; }
   .contact-info .chambers { order: 3; }
 }
+
+/* Hint / validation line under the input, error bubbles, send-button states */
+.wa-hint { margin: 0; padding: 0 1rem .55rem; min-height: 0; font-size: .78rem; color: #54656f; background: #f0f2f5; }
+.wa-hint:empty { display: none; }
+.wa-hint.error { color: #b3261e; font-weight: 600; }
+.wa-input textarea[aria-invalid="true"] { box-shadow: 0 0 0 2px rgba(179,38,30,.45); }
+.wa-msg.wa-error { background: #fdecea; }
+.wa-msg.in.wa-error::before { background: linear-gradient(225deg, #fdecea 50%, transparent 50%); }
+.wa-cta.is-loading { opacity: .75; pointer-events: none; }
+.wa-cta.is-loading::after { content: ""; width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(255,255,255,.5); border-top-color: #fff; animation: spin .8s linear infinite; }
+.wa-cta.is-done { background: var(--wa-head); }
+html[lang="bn"] .wa { font-family: var(--bangla); }

@@ -3,79 +3,123 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Advocate Rowshan Ali — Supreme Court of Bangladesh</title>
+  <title>Advocate Rowshan Ali | Supreme Court of Bangladesh</title>
   <meta name="description" content="Advocate Rowshan Ali, Supreme Court of Bangladesh and Head of The Lawyers' Chamber, Dhaka. Learn Bangladesh law, find first steps for your problem, and chat with the chamber on WhatsApp." />
-  <meta property="og:title" content="Advocate Rowshan Ali — Supreme Court of Bangladesh" />
+  <link rel="canonical" href="https://advocate-rowshan-ali.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://advocate-rowshan-ali.vercel.app/" />
+  <meta property="og:title" content="Advocate Rowshan Ali | Supreme Court of Bangladesh" />
   <meta property="og:description" content="Learn your rights, find solutions and talk to an advocate. The Lawyers' Chamber, Dhaka." />
+  <meta property="og:image" content="https://advocate-rowshan-ali.vercel.app/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#0b1322" />
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/1a/Logo_of_the_Supreme_Court_of_Bangladesh.svg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preload" as="image" href="rowshan-ali.webp" type="image/webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+Bengali:wght@500;600&family=Hind+Siliguri:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+Bengali:wght@500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="chat.css" />
+  <link rel="stylesheet" href="icons.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to main content</a>
   <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 
   <header class="nav" id="nav">
-    <a href="#top" class="brand" aria-label="Home">
-      <span class="brand-mark">RA</span>
-      <span class="brand-text"><strong>Rowshan Ali</strong><small>Advocate · Supreme Court</small></span>
+    <a href="#top" class="brand" aria-label="Rowshan Ali — home">
+      <span class="brand-mark" aria-hidden="true">RA</span>
+      <span class="brand-text"><strong data-i18n="brand.name">Rowshan Ali</strong><small data-i18n="brand.sub">Advocate · Supreme Court</small></span>
     </a>
-    <nav class="nav-links" id="navLinks" aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#solve">Find a Solution</a>
-      <a href="#laws">Laws</a>
-      <a href="#qna">Q&amp;A</a>
-      <a href="#quiz">Quiz</a>
-      <a href="#waChat" class="btn btn-wa btn-sm"><svg class="i" aria-hidden="true"><use href="#i-wa" /></svg>Chat now</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#about" data-i18n="nav.about" data-icon="user">About</a>
+      <a href="#solve" data-i18n="nav.solve" data-icon="compass">Find a Solution</a>
+      <a href="#laws" data-i18n="nav.laws" data-icon="book">Laws</a>
+      <a href="#qna" data-i18n="nav.qna" data-icon="help">Q&amp;A</a>
+      <a href="#quiz" data-i18n="nav.quiz" data-icon="sparkle">Quiz</a>
     </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" type="button" data-lang-toggle aria-label="বাংলায় দেখুন — switch to Bangla"><span class="lang-bn">বাংলা</span><span class="lang-en">English</span></button>
+      <a href="#waChat" class="btn btn-wa btn-sm nav-chat"><svg class="i" aria-hidden="true"><use href="#i-wa" /></svg><span data-i18n="nav.chat">Chat now</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    </div>
   </header>
 
-  <main id="top">
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#about" data-i18n="nav.about" data-icon="user">About</a>
+      <a href="#court" data-i18n="nav.court" data-icon="landmark">Supreme Court</a>
+      <a href="#solve" data-i18n="nav.solve" data-icon="compass">Find a Solution</a>
+      <a href="#laws" data-i18n="nav.laws" data-icon="book">Laws</a>
+      <a href="#official" data-i18n="nav.official" data-icon="globe">Official sources</a>
+      <a href="#qna" data-i18n="nav.qna" data-icon="help">Q&amp;A</a>
+      <a href="#media" data-i18n="nav.media" data-icon="play">Watch &amp; learn</a>
+      <a href="#quiz" data-i18n="nav.quiz" data-icon="sparkle">Quiz</a>
+      <a href="#practice" data-i18n="nav.practice" data-icon="briefcase">Practice areas</a>
+      <a href="#contact" data-i18n="nav.contact" data-icon="chat">Contact</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <button class="btn btn-ghost" type="button" data-lang-toggle><span class="lang-bn">বাংলায় দেখুন</span><span class="lang-en">View in English</span></button>
+      <a class="btn btn-gold" href="tel:+8801717023985"><svg class="i" aria-hidden="true"><use href="#i-phone" /></svg><span data-i18n="cta.call">Call 01717-023985</span></a>
+    </div>
+  </div>
+
+  <noscript><p class="noscript">The interactive tools on this page need JavaScript. You can still call the chamber on <a href="tel:+8801717023985">01717-023985</a> or <a href="https://wa.me/8801717023985">message on WhatsApp</a>.</p></noscript>
+
+  <main id="main" tabindex="-1">
+    <span id="top"></span>
     <!-- HERO -->
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow reveal">The Lawyers' Chamber · Dhaka</p>
-          <h1 class="reveal">Advocate<br /><em>Rowshan Ali</em></h1>
-          <p class="hero-sub reveal">Advocate, Supreme Court of Bangladesh · LL.B., LL.M.<br />Head of The Lawyers' Chamber · Panel Lawyer, NCC Bank PLC</p>
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">The Lawyers' Chamber · Dhaka</p>
+          <h1 class="reveal" data-i18n="hero.title">Advocate<br /><em>Rowshan Ali</em></h1>
+          <p class="hero-sub reveal" data-i18n="hero.sub">Advocate, Supreme Court of Bangladesh · LL.B., LL.M.<br />Head of The Lawyers' Chamber · Panel Lawyer, NCC Bank PLC</p>
           <p class="hero-bn reveal" lang="bn">আইনি সমস্যা? আসুন সমাধানের কথা বলি।</p>
           <div class="hero-cta reveal">
-            <a href="#solve" class="btn btn-gold">Find a solution to my problem</a>
-            <a href="#waChat" class="btn btn-ghost"><svg class="i" aria-hidden="true"><use href="#i-wa" /></svg>Chat on WhatsApp</a>
+            <a href="#solve" class="btn btn-gold" data-i18n="hero.cta1">Find a solution to my problem</a>
+            <a href="#waChat" class="btn btn-ghost"><svg class="i" aria-hidden="true"><use href="#i-wa" /></svg><span data-i18n="hero.cta2">Chat on WhatsApp</span></a>
           </div>
+          <a class="followers reveal" href="https://www.facebook.com/rowshan.ali.5" target="_blank" rel="noopener">
+            <span class="followers-ic" aria-hidden="true">f</span>
+            <span><strong>14K+</strong> <span data-i18n="hero.followers">followers on Facebook</span></span>
+            <span class="followers-go" aria-hidden="true">↗</span>
+          </a>
         </div>
         <div class="hero-portrait reveal">
-          <div class="portrait-frame">
-            <img src="https://lawyerschamber.info/wp-content/uploads/2024/03/Untitled-design-26.png" alt="Advocate Rowshan Ali in court attire" width="400" height="600" fetchpriority="high" onerror="this.remove()" />
+          <div class="portrait-frame img-loading">
+            <img src="rowshan-ali.webp" alt="Advocate Rowshan Ali in court attire" width="400" height="600" fetchpriority="high" decoding="async" data-i18n-attr="alt:img.portrait" />
             <span class="portrait-fallback" aria-hidden="true">RA</span>
           </div>
           <div class="portrait-badge">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Logo_of_the_Supreme_Court_of_Bangladesh.svg" alt="" width="46" height="36" />
-            <div><strong>Supreme Court</strong><small>of Bangladesh</small></div>
+            <img src="sc-logo.svg" alt="" width="46" height="36" />
+            <div><strong data-i18n="badge.1">Supreme Court</strong><small data-i18n="badge.2">of Bangladesh</small></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CREDENTIAL BAR -->
-    <section class="cred-bar" aria-label="At a glance">
+    <section class="cred-bar" aria-label="At a glance" data-i18n-attr="aria-label:cred.label">
       <div class="container cred-grid">
-        <div><strong><b data-count="14">0</b>K+</strong><span>people learning law with him online</span></div>
-        <div><strong><b data-count="35">0</b>+</strong><span>areas of practice</span></div>
-        <div><strong><b data-count="3">0</b></strong><span>chambers in Dhaka</span></div>
-        <div><strong>HCD</strong><span>High Court Division to Magistrate courts</span></div>
+        <div><strong><b data-count="14">14</b>K+</strong><span data-i18n="cred.1" data-icon="users">followers on Facebook</span></div>
+        <div><strong><b data-count="35">35</b>+</strong><span data-i18n="cred.2" data-icon="briefcase">areas of practice</span></div>
+        <div><strong><b data-count="3">3</b></strong><span data-i18n="cred.3" data-icon="pin">chambers in Dhaka</span></div>
+        <div><strong>LL.M.</strong><span data-i18n="cred.4" data-icon="grad">Master of Laws · Supreme Court advocate</span></div>
       </div>
     </section>
 
     <!-- QUOTES -->
-    <section class="quotes" id="quotes" aria-label="Quotes on justice">
+    <section class="quotes" id="quotes" aria-label="Quotes on justice" data-i18n-attr="aria-label:quotes.label">
       <div class="container">
         <div class="quote-stage" id="quoteStage" aria-live="polite"></div>
-        <div class="quote-dots" id="quoteDots" role="tablist" aria-label="Choose quote"></div>
+        <div class="quote-dots" id="quoteDots" aria-label="Choose quote" data-i18n-attr="aria-label:quotes.choose"></div>
       </div>
     </section>
 
@@ -83,49 +127,50 @@
     <section class="section" id="about">
       <div class="container about-grid">
         <div class="reveal">
-          <p class="eyebrow"><span class="num">01</span> About the advocate</p>
-          <h2>Law explained plainly. <em>Defended fiercely.</em></h2>
+          <p class="eyebrow"><span class="num">01</span> <span data-i18n="about.eyebrow">About the advocate</span></p>
+          <h2 data-i18n="about.title">Law explained plainly. <em>Defended fiercely.</em></h2>
           <figure class="creed">
-            <blockquote>“We think out-of-the-box and provide legal solutions.”</blockquote>
-            <figcaption>— Rowshan Ali, Head of Chamber</figcaption>
+            <blockquote data-i18n="about.creed">“We think out-of-the-box and provide legal solutions.”</blockquote>
+            <figcaption data-i18n="about.creedBy">— Rowshan Ali, Head of Chamber</figcaption>
           </figure>
-          <p class="lead">Rowshan Ali founded The Lawyers' Chamber, a multi-discipline firm of advocates, barristers, tax consultants, trademark attorneys and notary public. The firm handles matters from the Magistrate and Assistant Judge courts through the Supreme Court, and before administrative, labour, customs, VAT and tax tribunals.</p>
-          <p>Thousands of people follow his talks on Facebook and YouTube, where he explains court decisions and everyday law in Bangla. He also prepares candidates for the High Court enrolment exam.</p>
+          <p class="lead" data-i18n="about.p1">Rowshan Ali founded The Lawyers' Chamber, a multi-discipline firm of advocates, barristers, tax consultants, trademark attorneys and notary public. The firm handles matters from the Magistrate and Assistant Judge courts through the Supreme Court, and before administrative, labour, customs, VAT and tax tribunals.</p>
+          <p data-i18n="about.p2">Thousands of people follow his talks on Facebook and YouTube, where he explains court decisions and everyday law in Bangla. He also prepares candidates for the High Court enrolment exam.</p>
         </div>
         <ol class="timeline reveal">
-          <li><span>Education</span><strong>LL.B. &amp; LL.M.</strong><p>Bachelor and Master of Laws.</p></li>
-          <li><span>Enrolment</span><strong>Supreme Court of Bangladesh</strong><p>Practising before the High Court Division and lower courts.</p></li>
-          <li><span>Leadership</span><strong>Head of The Lawyers' Chamber</strong><p>Moghbazar, the Supreme Court Bar and Court House Street.</p></li>
-          <li><span>Banking</span><strong>Panel Lawyer, NCC Bank PLC</strong><p>Loan recovery, Artha Rin and banking litigation.</p></li>
+          <li><span data-i18n="tl.1a" data-icon="grad">Education</span><strong data-i18n="tl.1b">LL.B. &amp; LL.M.</strong><p data-i18n="tl.1c">Bachelor and Master of Laws.</p></li>
+          <li><span data-i18n="tl.2a" data-icon="scale">Enrolment</span><strong data-i18n="tl.2b">Supreme Court of Bangladesh</strong><p data-i18n="tl.2c">Practising before the High Court Division and lower courts.</p></li>
+          <li><span data-i18n="tl.3a" data-icon="award">Leadership</span><strong data-i18n="tl.3b">Head of The Lawyers' Chamber</strong><p data-i18n="tl.3c">Moghbazar, the Supreme Court Bar and Court House Street.</p></li>
+          <li><span data-i18n="tl.4a" data-icon="banknote">Banking</span><strong data-i18n="tl.4b">Panel Lawyer, NCC Bank PLC</strong><p data-i18n="tl.4c">Loan recovery, Artha Rin and banking litigation.</p></li>
         </ol>
       </div>
     </section>
 
     <!-- SUPREME COURT FEATURE -->
-    <section class="court" aria-labelledby="courtTitle">
+    <section class="court" id="court" aria-labelledby="courtTitle">
       <div class="container court-grid">
         <div class="court-copy reveal">
-          <img class="court-logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Logo_of_the_Supreme_Court_of_Bangladesh.svg" alt="Emblem of the Supreme Court of Bangladesh" width="96" height="74" loading="lazy" />
-          <p class="eyebrow"><span class="num">02</span> In the highest court</p>
-          <h2 id="courtTitle">Practising before the <em>Supreme Court of Bangladesh</em></h2>
-          <p>From his court chamber at the Supreme Court Bar Association building, he appears in writ petitions, bail, civil and criminal revisions, appeals and company matters before the High Court Division.</p>
+          <img class="court-logo" src="sc-logo.svg" alt="Emblem of the Supreme Court of Bangladesh" width="96" height="74" loading="lazy" data-i18n-attr="alt:img.emblem" />
+          <p class="eyebrow"><span class="num">02</span> <span data-i18n="court.eyebrow">In the highest court</span></p>
+          <h2 id="courtTitle" data-i18n="court.title">Practising before the <em>Supreme Court of Bangladesh</em></h2>
+          <p data-i18n="court.p">From his court chamber at the Supreme Court Bar Association building, he appears in writ petitions, bail, civil and criminal revisions, appeals and company matters before the High Court Division.</p>
           <ul class="court-tags">
-            <li>Writ petitions · Art. 102</li><li>Anticipatory bail</li><li>Civil revision</li><li>Criminal appeal</li><li>Company matters</li>
+            <li data-i18n="court.t1" data-icon="file">Writ petitions · Art. 102</li><li data-i18n="court.t2" data-icon="shield">Anticipatory bail</li><li data-i18n="court.t3" data-icon="scale">Civil revision</li><li data-i18n="court.t4" data-icon="gavel">Criminal appeal</li><li data-i18n="court.t5" data-icon="building">Company matters</li>
           </ul>
         </div>
         <div class="court-media reveal">
-          <figure class="court-video">
-            <video id="courtVideo" autoplay muted loop playsinline preload="none"
-              poster="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Illuminated_Supreme_Court.jpg/960px-Illuminated_Supreme_Court.jpg"
+          <figure class="court-video is-loading" id="courtVideoWrap">
+            <video id="courtVideo" muted loop playsinline preload="none" poster="court-night.webp"
               data-src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b4/Illuminated_supreme_Court.webm/Illuminated_supreme_Court.webm.480p.vp9.webm"
-              aria-label="The Supreme Court of Bangladesh illuminated at night"></video>
-            <button class="video-toggle" id="videoToggle" aria-label="Pause video" aria-pressed="false">
+              aria-label="The Supreme Court of Bangladesh illuminated at night" data-i18n-attr="aria-label:img.night"></video>
+            <span class="spinner" aria-hidden="true"></span>
+            <p class="media-error" id="videoError" hidden data-i18n="court.videoError">Video couldn't load — showing a photo instead.</p>
+            <button class="video-toggle" id="videoToggle" type="button" aria-label="Pause video" aria-pressed="false" hidden>
               <span class="pause" aria-hidden="true">❚❚</span><span class="play" aria-hidden="true">▶</span>
             </button>
-            <figcaption>The Supreme Court, illuminated · Dhaka</figcaption>
+            <figcaption data-i18n="court.caption">The Supreme Court, illuminated · Dhaka</figcaption>
           </figure>
-          <figure class="court-photo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Supreme_Court_of_Bangladesh_01.jpg/960px-Supreme_Court_of_Bangladesh_01.jpg" alt="The Supreme Court of Bangladesh building in daylight" loading="lazy" width="960" height="640" />
+          <figure class="court-photo img-loading">
+            <img src="court-day.webp" alt="The Supreme Court of Bangladesh building in daylight" loading="lazy" decoding="async" width="800" height="533" data-i18n-attr="alt:img.day" />
           </figure>
         </div>
       </div>
@@ -135,12 +180,12 @@
     <section class="section section-dark" id="solve">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow"><span class="num">03</span> Find a solution</p>
-          <h2>What is your problem? <em>Start here.</em></h2>
-          <p>Choose what fits your situation. You'll see the law that applies, practical first steps and what documents to gather before you meet an advocate.</p>
+          <p class="eyebrow"><span class="num">03</span> <span data-i18n="solve.eyebrow">Find a solution</span></p>
+          <h2 data-i18n="solve.title">What is your problem? <em>Start here.</em></h2>
+          <p data-i18n="solve.intro">Choose what fits your situation. You'll see the law that applies, practical first steps and what documents to gather before you meet an advocate.</p>
         </div>
         <div class="solve-grid">
-          <div class="solve-picker reveal" id="solvePicker" role="tablist" aria-label="Problem types"></div>
+          <div class="solve-picker reveal" id="solvePicker" role="group" aria-label="Problem types" data-i18n-attr="aria-label:solve.types"></div>
           <article class="solve-panel reveal" id="solvePanel" aria-live="polite"></article>
         </div>
       </div>
@@ -150,29 +195,37 @@
     <section class="section" id="laws">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow"><span class="num">04</span> Learn Bangladesh law</p>
-          <h2>The laws that shape <em>everyday life</em></h2>
-          <p>Search or filter key Acts. Tap a card for its key sections in plain language.</p>
+          <p class="eyebrow"><span class="num">04</span> <span data-i18n="laws.eyebrow">Learn Bangladesh law</span></p>
+          <h2 data-i18n="laws.title">The laws that shape <em>everyday life</em></h2>
+          <p data-i18n="laws.intro">Search or filter key Acts. Tap a card for its key sections in plain language.</p>
         </div>
         <div class="toolbar reveal">
           <label class="search">
-            <span class="sr-only">Search laws</span>
-            <input type="search" id="lawSearch" placeholder="Search: cheque, land, divorce, bail…" autocomplete="off" />
+            <span class="sr-only" data-i18n="laws.searchLabel">Search laws</span>
+            <input type="search" id="lawSearch" placeholder="Search: cheque, land, divorce, bail…" autocomplete="off" data-i18n-attr="placeholder:laws.placeholder" />
           </label>
-          <div class="chips" id="lawChips" role="group" aria-label="Filter by category"></div>
+          <div class="chips" id="lawChips" role="group" aria-label="Filter by category" data-i18n-attr="aria-label:filter"></div>
         </div>
+        <p class="result-count" id="lawCount" aria-live="polite"></p>
         <div class="law-grid" id="lawGrid"></div>
-        <p class="empty" id="lawEmpty" hidden>No law matches that search. Try another word or <a href="#waChat">ask the advocate</a>.</p>
+        <div class="empty" id="lawEmpty" hidden>
+          <span class="empty-ic" aria-hidden="true">§</span>
+          <p data-i18n="laws.empty">No law matches that search.</p>
+          <div class="empty-actions">
+            <button type="button" class="btn btn-outline btn-sm" id="lawClear" data-i18n="clear">Clear search</button>
+            <a href="#waChat" class="btn btn-wa btn-sm" data-i18n="askAdvocate">Ask the advocate</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- RIGHTS STRIP -->
-    <section class="rights" aria-label="Your fundamental rights">
+    <section class="rights" aria-label="Your fundamental rights" data-i18n-attr="aria-label:rights.label">
       <div class="container rights-grid">
-        <div class="right-card reveal"><span>Art. 27</span><p>Equal before the law</p></div>
-        <div class="right-card reveal"><span>Art. 33</span><p>Told why you're arrested; a lawyer; a magistrate within 24 hours</p></div>
-        <div class="right-card reveal"><span>Art. 35</span><p>Cannot be forced to testify against yourself</p></div>
-        <div class="right-card reveal"><span>Art. 39</span><p>Freedom of thought, conscience and speech</p></div>
+        <div class="right-card reveal"><span data-i18n="rights.1a" data-icon="scale">Art. 27</span><p data-i18n="rights.1b">Equal before the law</p></div>
+        <div class="right-card reveal"><span data-i18n="rights.2a" data-icon="shield">Art. 33</span><p data-i18n="rights.2b">Told why you're arrested; a lawyer; a magistrate within 24 hours</p></div>
+        <div class="right-card reveal"><span data-i18n="rights.3a" data-icon="lock">Art. 35</span><p data-i18n="rights.3b">Cannot be forced to testify against yourself</p></div>
+        <div class="right-card reveal"><span data-i18n="rights.4a" data-icon="megaphone">Art. 39</span><p data-i18n="rights.4b">Freedom of thought, conscience and speech</p></div>
       </div>
     </section>
 
@@ -180,9 +233,9 @@
     <section class="section official" id="official">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Official sources</p>
-          <h2>Verify it at the <em>source</em></h2>
-          <p>Government and Bar Council websites for official law texts, forms, legal aid and verifying an advocate.</p>
+          <p class="eyebrow" data-i18n="official.eyebrow">Official sources</p>
+          <h2 data-i18n="official.title">Verify it at the <em>source</em></h2>
+          <p data-i18n="official.intro">Government and Bar Council websites for official laws, e-services, legal aid and verifying an advocate.</p>
         </div>
         <div class="official-grid" id="officialGrid"></div>
       </div>
@@ -192,23 +245,32 @@
     <section class="section section-ivory" id="qna">
       <div class="container narrow">
         <div class="section-head reveal">
-          <p class="eyebrow"><span class="num">05</span> Questions &amp; answers</p>
-          <h2>What people ask <em>most often</em></h2>
+          <p class="eyebrow"><span class="num">05</span> <span data-i18n="qna.eyebrow">Questions &amp; answers</span></p>
+          <h2 data-i18n="qna.title">What people ask <em>most often</em></h2>
         </div>
         <div class="toolbar reveal">
           <label class="search">
-            <span class="sr-only">Search questions</span>
-            <input type="search" id="faqSearch" placeholder="Type your question…" autocomplete="off" />
+            <span class="sr-only" data-i18n="qna.searchLabel">Search questions</span>
+            <input type="search" id="faqSearch" placeholder="Type your question…" autocomplete="off" data-i18n-attr="placeholder:qna.placeholder" />
           </label>
-          <div class="chips" id="faqChips" role="group" aria-label="Filter questions"></div>
+          <div class="chips" id="faqChips" role="group" aria-label="Filter questions" data-i18n-attr="aria-label:filter"></div>
         </div>
+        <p class="result-count" id="faqCount" aria-live="polite"></p>
         <div class="faq-list" id="faqList"></div>
+        <div class="empty" id="faqEmpty" hidden>
+          <span class="empty-ic" aria-hidden="true">?</span>
+          <p data-i18n="qna.empty">No matching question yet.</p>
+          <div class="empty-actions">
+            <button type="button" class="btn btn-outline btn-sm" id="faqClear" data-i18n="clear">Clear search</button>
+            <a href="#waChat" class="btn btn-wa btn-sm" data-prefill-from="faqSearch" data-i18n="qna.askThis">Ask this on WhatsApp</a>
+          </div>
+        </div>
         <div class="ask-box reveal">
           <div>
-            <h3>Didn't find your answer?</h3>
-            <p>Send your question straight to the chamber on WhatsApp.</p>
+            <h3 data-i18n="qna.askTitle" data-icon="help">Didn't find your answer?</h3>
+            <p data-i18n="qna.askText">Send your question straight to the chamber on WhatsApp.</p>
           </div>
-          <a href="#waChat" class="btn btn-wa" data-prefill="I have a legal question: "><svg class="i" aria-hidden="true"><use href="#i-wa" /></svg>Ask on WhatsApp</a>
+          <a href="#waChat" class="btn btn-wa" data-prefill="I have a legal question: " data-i18n-attr="data-prefill:qna.prefix"><svg class="i" aria-hidden="true"><use href="#i-wa" /></svg><span data-i18n="qna.askBtn">Ask on WhatsApp</span></a>
         </div>
       </div>
     </section>
@@ -217,22 +279,22 @@
     <section class="section media" id="media">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow"><span class="num">06</span> Watch &amp; learn</p>
-          <h2>Law, explained <em>in Bangla</em></h2>
-          <p>He regularly goes live to explain new High Court orders, rights and procedure for ordinary people.</p>
+          <p class="eyebrow"><span class="num">06</span> <span data-i18n="media.eyebrow">Watch &amp; learn</span></p>
+          <h2 data-i18n="media.title">Law, explained <em>in Bangla</em></h2>
+          <p data-i18n="media.intro">He regularly goes live to explain new High Court orders, rights and procedure for ordinary people.</p>
         </div>
         <div class="media-grid">
-          <a class="media-card reveal" href="#" data-link="facebook" target="_blank" rel="noopener">
+          <a class="media-card reveal" href="https://www.facebook.com/rowshan.ali.5" target="_blank" rel="noopener">
             <span class="media-ic fb" aria-hidden="true">f</span>
-            <strong>Facebook</strong><small>14K+ followers · live legal talks</small><span class="go">Follow ↗</span>
+            <strong>Facebook</strong><small data-i18n="media.fb">14K+ followers · live legal talks</small><span class="go" data-i18n="media.follow">Follow ↗</span>
           </a>
-          <a class="media-card reveal" href="#" data-link="youtube" target="_blank" rel="noopener">
+          <a class="media-card reveal" href="https://www.youtube.com/@TheLawyersChamber/videos" target="_blank" rel="noopener">
             <span class="media-ic yt" aria-hidden="true">▶</span>
-            <strong>YouTube</strong><small>The Lawyers' Chamber channel</small><span class="go">Watch ↗</span>
+            <strong>YouTube</strong><small data-i18n="media.yt">The Lawyers' Chamber channel</small><span class="go" data-i18n="media.watch">Watch ↗</span>
           </a>
-          <a class="media-card reveal" href="#waChat" data-topic="High Court enrolment exam coaching">
+          <a class="media-card reveal" href="#waChat" data-topic="High Court enrolment exam coaching" data-i18n-attr="data-topic:media.hcTopic">
             <span class="media-ic hc" aria-hidden="true">✎</span>
-            <strong>High Court exam batch</strong><small>Coaching for advocates preparing for HCD enrolment</small><span class="go">Enquire →</span>
+            <strong data-i18n="media.hc" data-icon="grad">High Court exam batch</strong><small data-i18n="media.hcText">Coaching for advocates preparing for HCD enrolment</small><span class="go" data-i18n="media.enquire">Enquire →</span>
           </a>
         </div>
       </div>
@@ -242,9 +304,9 @@
     <section class="section section-dark" id="quiz">
       <div class="container narrow">
         <div class="section-head reveal">
-          <p class="eyebrow"><span class="num">07</span> Interactive</p>
-          <h2>How well do you know <em>your rights?</em></h2>
-          <p>Six quick questions. Every answer comes with the law behind it.</p>
+          <p class="eyebrow"><span class="num">07</span> <span data-i18n="quiz.eyebrow">Interactive</span></p>
+          <h2 data-i18n="quiz.title">How well do you know <em>your rights?</em></h2>
+          <p data-i18n="quiz.intro">Six quick questions. Every answer comes with the law behind it.</p>
         </div>
         <div class="quiz-card reveal" id="quizCard" aria-live="polite"></div>
       </div>
@@ -254,16 +316,16 @@
     <section class="section" id="practice">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow"><span class="num">08</span> Areas of practice</p>
-          <h2>From the Magistrate court <em>to the Supreme Court</em></h2>
+          <p class="eyebrow"><span class="num">08</span> <span data-i18n="practice.eyebrow">Areas of practice</span></p>
+          <h2 data-i18n="practice.title">From the Magistrate court <em>to the Supreme Court</em></h2>
         </div>
         <ul class="practice-grid" id="practiceGrid"></ul>
       </div>
     </section>
 
     <!-- CLIENTS -->
-    <section class="clients" aria-label="Corporate clients">
-      <p class="eyebrow center">Trusted by</p>
+    <section class="clients" aria-label="Corporate clients" data-i18n-attr="aria-label:clients.label">
+      <p class="eyebrow center" data-i18n="clients.title">Trusted by</p>
       <div class="marquee"><div class="marquee-track" id="clientTrack"></div></div>
     </section>
 
@@ -271,107 +333,145 @@
     <section class="section section-dark" id="contact">
       <div class="container contact-grid">
         <div class="reveal contact-info">
-          <p class="eyebrow"><span class="num">09</span> Contact the advocate</p>
-          <h2>Tell us what happened. <em>We'll talk solutions.</em></h2>
-          <p class="lead">Answer a few quick questions in the chat. Your message then opens in WhatsApp, ready to send to the chamber. Nothing is stored on this website.</p>
+          <p class="eyebrow"><span class="num">09</span> <span data-i18n="contact.eyebrow">Contact the advocate</span></p>
+          <h2 data-i18n="contact.title">Tell us what happened. <em>We'll talk solutions.</em></h2>
+          <p class="lead" data-i18n="contact.intro">Answer a few quick questions in the chat. Your message then opens in WhatsApp, ready to send to the chamber. Nothing is stored on this website.</p>
           <div class="contact-quick">
-            <a class="quick" href="#" data-link="tel"><span><svg class="i" aria-hidden="true"><use href="#i-phone" /></svg></span><div><small>Call</small><strong data-text="phoneDisplay"></strong></div></a>
-            <a class="quick" href="#" data-link="mail"><span><svg class="i" aria-hidden="true"><use href="#i-mail" /></svg></span><div><small>Email</small><strong data-text="email"></strong></div></a>
+            <div class="quick">
+              <span class="quick-ic"><svg class="i" aria-hidden="true"><use href="#i-phone" /></svg></span>
+              <div><small data-i18n="contact.call" data-icon="phone">Call</small><a href="tel:+8801717023985"><strong>01717-023985</strong></a> · <a href="tel:+8801739526131"><strong>01739-526131</strong></a></div>
+              <button type="button" class="copy-btn" data-copy="+8801717023985" aria-label="Copy phone number" data-i18n-attr="aria-label:copy.phone">⧉</button>
+            </div>
+            <div class="quick">
+              <span class="quick-ic"><svg class="i" aria-hidden="true"><use href="#i-mail" /></svg></span>
+              <div><small data-i18n="contact.email" data-icon="mail">Email</small><a href="mailto:lawyerschamber2016@gmail.com"><strong>lawyerschamber2016@gmail.com</strong></a></div>
+              <button type="button" class="copy-btn" data-copy="lawyerschamber2016@gmail.com" aria-label="Copy email address" data-i18n-attr="aria-label:copy.email">⧉</button>
+            </div>
           </div>
           <div class="chambers">
             <details open>
-              <summary>Chamber 01 · Moghbazar</summary>
-              <p>Flat A-4 (4th floor), 129 Bara Moghbazar, Ramna Century Avenue, Dhaka-1217</p>
-              <a href="https://www.google.com/maps/search/?api=1&query=129+Bara+Moghbazar+Dhaka+1217" target="_blank" rel="noopener">Open in Maps ↗</a>
+              <summary data-i18n="ch.1" data-icon="pin">Chamber 01 · Moghbazar</summary>
+              <p data-i18n="ch.1a">Flat A-4 (4th floor), 129 Bara Moghbazar, Ramna Century Avenue, Dhaka-1217</p>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=129+Bara+Moghbazar+Dhaka+1217" target="_blank" rel="noopener" data-i18n="maps">Open in Maps ↗</a>
             </details>
             <details>
-              <summary>Court Chamber 02 · Supreme Court</summary>
-              <p>Hall Room No. 02, 1st floor, Supreme Court Bar Association Building, Ramna, Dhaka</p>
-              <a href="https://www.google.com/maps/search/?api=1&query=Supreme+Court+Bar+Association+Building+Dhaka" target="_blank" rel="noopener">Open in Maps ↗</a>
+              <summary data-i18n="ch.2" data-icon="pin">Court Chamber 02 · Supreme Court</summary>
+              <p data-i18n="ch.2a">Hall Room No. 02, 1st floor, Supreme Court Bar Association Building, Ramna, Dhaka</p>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Supreme+Court+Bar+Association+Building+Dhaka" target="_blank" rel="noopener" data-i18n="maps">Open in Maps ↗</a>
             </details>
             <details>
-              <summary>Court Chamber 03 · Kotwali</summary>
-              <p>Room No. 301, 33 Court House Street, Kotwali, Dhaka-1100</p>
-              <a href="https://www.google.com/maps/search/?api=1&query=33+Court+House+Street+Kotwali+Dhaka" target="_blank" rel="noopener">Open in Maps ↗</a>
+              <summary data-i18n="ch.3" data-icon="pin">Court Chamber 03 · Kotwali</summary>
+              <p data-i18n="ch.3a">Room No. 301, 33 Court House Street, Kotwali, Dhaka-1100</p>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=33+Court+House+Street+Kotwali+Dhaka" target="_blank" rel="noopener" data-i18n="maps">Open in Maps ↗</a>
             </details>
           </div>
         </div>
 
         <div class="wa reveal" id="waChat">
           <div class="wa-head">
-            <img class="wa-avatar" src="https://lawyerschamber.info/wp-content/uploads/2024/03/Untitled-design-26.png" alt="" width="40" height="40" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'wa-avatar wa-avatar-fb',textContent:'RA'}))" />
+            <img class="wa-avatar" src="rowshan-ali-avatar.webp" alt="" width="42" height="42" />
             <div class="wa-who">
-              <strong>Adv. Rowshan Ali <svg class="wa-verified" aria-label="Verified" viewBox="0 0 24 24"><path d="M12 1.5l2.6 2 3.3-.3 1 3.1 2.8 1.8-1 3.1 1 3.1-2.8 1.8-1 3.1-3.3-.3-2.6 2-2.6-2-3.3.3-1-3.1L2.3 15.3l1-3.1-1-3.1 2.8-1.8 1-3.1 3.3.3z" fill="#25d366"/><path d="M8 12.3l2.6 2.5L16.2 9" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg></strong>
+              <strong><span data-i18n="chat.name">Adv. Rowshan Ali</span> <svg class="wa-verified" role="img" aria-label="Verified" viewBox="0 0 24 24"><path d="M12 1.5l2.6 2 3.3-.3 1 3.1 2.8 1.8-1 3.1 1 3.1-2.8 1.8-1 3.1-3.3-.3-2.6 2-2.6-2-3.3.3-1-3.1L2.3 15.3l1-3.1-1-3.1 2.8-1.8 1-3.1 3.3.3z" fill="#25d366"/><path d="M8 12.3l2.6 2.5L16.2 9" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg></strong>
               <small id="waStatus">online</small>
             </div>
-            <a class="wa-icon" href="#" data-link="tel" aria-label="Call the chamber"><svg class="i" aria-hidden="true"><use href="#i-phone" /></svg></a>
-            <button class="wa-icon" id="waRestart" aria-label="Start the chat again">↻</button>
+            <a class="wa-icon" href="tel:+8801717023985" aria-label="Call the chamber" data-i18n-attr="aria-label:chat.callLabel"><svg class="i" aria-hidden="true"><use href="#i-phone" /></svg></a>
+            <button class="wa-icon" id="waRestart" type="button" aria-label="Start the chat again" data-i18n-attr="aria-label:chat.restart">↻</button>
           </div>
-          <div class="wa-body" id="waBody" role="log" aria-live="polite" aria-label="Chat with the chamber">
-            <div class="wa-chip">Today</div>
-            <div class="wa-notice">🔒 This chat runs in your browser. Your message goes to the chamber only when you press send in WhatsApp.</div>
+          <div class="wa-body" id="waBody" role="log" aria-live="polite" aria-label="Chat with the chamber" data-i18n-attr="aria-label:chat.label">
+            <div class="wa-chip" data-i18n="chat.today">Today</div>
+            <div class="wa-notice" data-i18n="chat.notice">🔒 This chat runs in your browser. Your message goes to the chamber only when you press send in WhatsApp.</div>
           </div>
           <div class="wa-quick" id="waQuick" hidden></div>
-          <form class="wa-input" id="waForm" autocomplete="on">
-            <label for="waText" class="sr-only">Your reply</label>
-            <textarea id="waText" rows="1" placeholder="Type a message" maxlength="1500"></textarea>
-            <button type="submit" class="wa-send" aria-label="Send"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.4 20.4l17.5-7.5c.8-.4.8-1.5 0-1.8L3.4 3.6c-.7-.3-1.4.2-1.4.9L2 9.1c0 .5.4.9.9 1l14.1 1.9-14.1 1.9c-.5.1-.9.5-.9 1l.01 4.6c0 .7.7 1.2 1.4.9z" fill="currentColor"/></svg></button>
+          <form class="wa-input" id="waForm" novalidate>
+            <label for="waText" class="sr-only" data-i18n="chat.reply">Your reply</label>
+            <textarea id="waText" rows="1" placeholder="Type a message" maxlength="1500" aria-describedby="waHint"></textarea>
+            <button type="submit" class="wa-send" aria-label="Send" data-i18n-attr="aria-label:chat.send"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.4 20.4l17.5-7.5c.8-.4.8-1.5 0-1.8L3.4 3.6c-.7-.3-1.4.2-1.4.9L2 9.1c0 .5.4.9.9 1l14.1 1.9-14.1 1.9c-.5.1-.9.5-.9 1l.01 4.6c0 .7.7 1.2 1.4.9z" fill="currentColor"/></svg></button>
           </form>
+          <p class="wa-hint" id="waHint" aria-live="polite"></p>
         </div>
       </div>
     </section>
 
     <!-- HELPLINES -->
-    <section class="helplines" aria-label="Emergency helplines">
+    <section class="helplines" aria-label="Emergency helplines" data-i18n-attr="aria-label:help.label">
       <div class="container help-grid">
-        <a href="tel:999"><strong>999</strong><span>Police · Fire · Ambulance</span></a>
-        <a href="tel:16430"><strong>16430</strong><span>Free government legal aid</span></a>
-        <a href="tel:109"><strong>109</strong><span>Violence against women &amp; children</span></a>
-        <a href="tel:16121"><strong>16121</strong><span>Consumer rights complaints</span></a>
+        <a href="tel:999"><strong>999</strong><span data-i18n="help.1" data-icon="alert">Police · Fire · Ambulance</span></a>
+        <a href="tel:16430"><strong>16430</strong><span data-i18n="help.2" data-icon="heart">Free government legal aid</span></a>
+        <a href="tel:109"><strong>109</strong><span data-i18n="help.3" data-icon="shield">Violence against women &amp; children</span></a>
+        <a href="tel:16121"><strong>16121</strong><span data-i18n="help.4" data-icon="bag">Consumer rights complaints</span></a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-grid">
+    <div class="container footer-top">
       <div class="footer-brand">
-        <span class="brand-mark">RA</span>
-        <p><strong>Advocate Rowshan Ali</strong><br />Supreme Court of Bangladesh · Head of The Lawyers' Chamber</p>
+        <span class="brand-mark" aria-hidden="true">RA</span>
+        <p><strong data-i18n="footer.name">Advocate Rowshan Ali</strong><br /><span data-i18n="footer.role">Supreme Court of Bangladesh · Head of The Lawyers' Chamber</span></p>
       </div>
-      <p class="disclaimer">The information on this website is general legal information about Bangladesh law, not legal advice for your specific case, and is not intended as solicitation. Laws change. Speak to an advocate before acting. This is a personal website and is not an official website of the Supreme Court of Bangladesh.</p>
+      <nav class="footer-col" aria-label="Explore" data-i18n-attr="aria-label:footer.explore">
+        <h3 data-i18n="footer.explore" data-icon="compass">Explore</h3>
+        <a href="#about" data-i18n="nav.about" data-icon="user">About</a>
+        <a href="#solve" data-i18n="nav.solve" data-icon="compass">Find a Solution</a>
+        <a href="#laws" data-i18n="nav.laws" data-icon="book">Laws</a>
+        <a href="#qna" data-i18n="nav.qna" data-icon="help">Q&amp;A</a>
+        <a href="#quiz" data-i18n="nav.quiz" data-icon="sparkle">Quiz</a>
+      </nav>
+      <div class="footer-col">
+        <h3 data-i18n="footer.contact" data-icon="phone">Contact</h3>
+        <a href="tel:+8801717023985">01717-023985</a>
+        <a href="https://wa.me/8801717023985" target="_blank" rel="noopener">WhatsApp ↗</a>
+        <a href="mailto:lawyerschamber2016@gmail.com">lawyerschamber2016@gmail.com</a>
+        <a href="https://www.facebook.com/rowshan.ali.5" target="_blank" rel="noopener">Facebook ↗</a>
+        <a href="https://www.youtube.com/@TheLawyersChamber/videos" target="_blank" rel="noopener">YouTube ↗</a>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer.official" data-icon="landmark">Official</h3>
+        <a href="https://www.supremecourt.gov.bd/" target="_blank" rel="noopener" data-i18n="footer.sc">Supreme Court ↗</a>
+        <a href="https://lawjusticediv.gov.bd/" target="_blank" rel="noopener" data-i18n="footer.ljd">Law &amp; Justice Division ↗</a>
+        <a href="https://www.barcouncil.gov.bd/" target="_blank" rel="noopener" data-i18n="footer.bar">Bar Council ↗</a>
+        <a href="http://nlaso.gov.bd/" target="_blank" rel="noopener" data-i18n="footer.aid">Legal aid · 16430 ↗</a>
+      </div>
     </div>
-    <p class="credits">Supreme Court video &amp; night photo: Wasiul Bahar / Towhidul Islam; daytime photo: MD Saiful Amin — via Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Supreme Court emblem: Wikimedia Commons, public domain.</p>
-    <p class="demo-note"><span>Demo</span> Demo website — for preview only. Content to be reviewed by the advocate before launch.</p>
-    <p class="copyright">© <span id="year"></span> The Lawyers' Chamber. All rights reserved.</p>
+    <div class="container">
+      <p class="disclaimer" data-i18n="footer.disclaimer">The information on this website is general legal information about Bangladesh law, not legal advice for your specific case, and is not intended as solicitation. Laws change. Speak to an advocate before acting. This is a personal website and is not an official website of the Supreme Court of Bangladesh.</p>
+      <p class="credits">Supreme Court video &amp; night photo: Wasiul Bahar / Towhidul Islam; daytime photo: MD Saiful Amin — via Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Supreme Court emblem: Wikimedia Commons, public domain.</p>
+      <p class="demo-note"><span>Demo</span> <span data-i18n="footer.demo">Demo website — for preview only. Content to be reviewed by the advocate before launch.</span></p>
+      <p class="copyright">© <span id="year">2026</span> <span data-i18n="footer.copy">Advocate Rowshan Ali · The Lawyers' Chamber, Dhaka. All rights reserved.</span></p>
+    </div>
   </footer>
 
   <!-- Mobile bottom navigation -->
-  <nav class="tabbar" aria-label="Quick navigation">
-    <a href="#top"><span aria-hidden="true">⌂</span>Home</a>
-    <a href="#solve"><span aria-hidden="true">✦</span>Solve</a>
-    <a href="#laws"><span aria-hidden="true">§</span>Laws</a>
-    <a href="#qna"><span aria-hidden="true">?</span>Q&amp;A</a>
-    <a href="#waChat" class="tab-wa"><span aria-hidden="true"><svg class="i"><use href="#i-wa" /></svg></span>Chat</a>
+  <nav class="tabbar" aria-label="Quick navigation" data-i18n-attr="aria-label:tab.label">
+    <a href="#top"><span aria-hidden="true">⌂</span><b data-i18n="tab.home">Home</b></a>
+    <a href="#solve"><span aria-hidden="true">✦</span><b data-i18n="tab.solve">Solve</b></a>
+    <a href="#laws"><span aria-hidden="true">§</span><b data-i18n="tab.laws">Laws</b></a>
+    <a href="#qna"><span aria-hidden="true">?</span><b data-i18n="tab.qna">Q&amp;A</b></a>
+    <a href="#waChat" class="tab-wa"><span aria-hidden="true"><svg class="i"><use href="#i-wa" /></svg></span><b data-i18n="tab.chat">Chat</b></a>
   </nav>
 
-  <div class="demo-sign" aria-label="Demo website">Demo</div>
-  <a class="float-wa" href="#waChat" aria-label="Chat with the advocate"><svg class="i" aria-hidden="true"><use href="#i-wa" /></svg></a>
-  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <div class="demo-sign" aria-hidden="true">Demo</div>
+  <a class="float-wa" href="#waChat" aria-label="Chat with the advocate" data-i18n-attr="aria-label:chat.open"><svg class="i" aria-hidden="true"><use href="#i-wa" /></svg></a>
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top" data-i18n-attr="aria-label:toTop">↑</button>
+  <div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
 
   <div class="modal" id="lawModal" role="dialog" aria-modal="true" aria-labelledby="lawModalTitle" hidden>
     <div class="modal-card">
-      <button class="modal-close" id="lawModalClose" aria-label="Close">×</button>
+      <button class="modal-close" id="lawModalClose" type="button" aria-label="Close" data-i18n-attr="aria-label:close">×</button>
       <div id="lawModalBody"></div>
     </div>
   </div>
 
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></symbol>
     <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></symbol>
   </svg>
 
   <script src="data.js"></script>
+  <script src="data-bn.js"></script>
+  <script src="i18n.js"></script>
+  <script src="ui.js"></script>
   <script src="app.js"></script>
   <script src="chat.js"></script>
 </body>
